@@ -7,60 +7,87 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'contrast' }}"; 
 @import "minimal-mistakes"; 
 
-/* --- Abdullah's High-Tech Aesthetic Overrides --- */
+/* --- Abdullah's High-Tech & Cinematic Portfolio --- */
 
-/* 1. Modern Background */
+/* 1. Modern Background Gradient */
 body {
-  /* A very light grey-blue gradient for a "tech" feel instead of plain white */
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   background-attachment: fixed;
   color: #333;
 }
 
-/* 2. Glassmorphism Navigation Bar */
+/* 2. Glassmorphism Navigation & Pill Buttons */
 .masthead {
   position: sticky;
   top: 0;
   z-index: 100;
   background: rgba(255, 255, 255, 0.7) !important; 
-  backdrop-filter: blur(15px); /* This creates the "iPhone-style" frosted glass */
+  backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 
-  /* Modernizing the Menu Buttons */
   .masthead__menu-item a {
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     font-size: 0.85rem;
-    padding: 10px 15px;
+    padding: 8px 20px !important;
+    margin: 0 5px;
     transition: all 0.3s ease;
-    border-radius: 8px;
+    border-radius: 25px; /* Creates the Pill Shape */
 
     &:hover {
-      background: rgba(0, 0, 0, 0.05);
-      color: #007bff !important; /* Tech blue accent */
+      background: #333 !important; /* Dark background on hover */
+      color: #fff !important;      /* White text on hover */
       transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
   }
 }
 
-/* 3. The "Cinematic" Profile Card */
+/* 3. Modern Archive/Blog Cards */
+.archive__item {
+  background: rgba(255, 255, 255, 0.9) !important;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  border-left: 6px solid #333; /* Strong Engineering accent */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff; /* Tech-blue change on hover */
+  }
+
+  .archive__item-title {
+    font-weight: 800;
+    a {
+      color: #111;
+      text-decoration: none;
+      &:hover { color: #007bff; }
+    }
+  }
+}
+
+/* 4. Cinematic Sidebar & Avatar */
 .sidebar {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.5);
 
   .author__avatar img {
-    border-radius: 15% !important; /* Soft rounded square */
-    filter: contrast(1.1) brightness(0.9); /* Subtle cinematic filter */
+    border-radius: 18% !important;
+    filter: contrast(1.05) brightness(0.95);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+    transition: transform 0.3s ease;
+    &:hover { transform: rotate(2deg) scale(1.03); }
   }
 }
 
-/* 4. Content Area Modernization */
+/* 5. Main Page Content Card */
 .page {
   background: rgba(255, 255, 255, 0.95);
   padding: 40px;
