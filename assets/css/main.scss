@@ -7,96 +7,113 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'contrast' }}"; 
 @import "minimal-mistakes"; 
 
-/* --- Abdullah's Refined High-Tech Portfolio --- */
+/* --- Abdullah's High-Tech & Cinematic Portfolio --- */
 
-/* 1. Global Background & Base Text */
+/* 1. Modern Background Gradient */
 body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
   background-attachment: fixed !important;
   color: #333;
-  font-size: 15px; /* Slightly smaller base font for a cleaner look */
 }
 
-/* 2. Compact Navigation Pill Buttons */
+/* 2. Glassmorphism Navigation & Pill Buttons */
 .masthead {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.75) !important; 
-  backdrop-filter: blur(12px);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.7) !important; 
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 
   .masthead__menu-item a {
     font-weight: 700 !important;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.75rem !important; /* Smaller, sharper nav text */
-    padding: 6px 18px !important;
-    border-radius: 20px !important;
+    letter-spacing: 1.2px;
+    font-size: 0.85rem;
+    padding: 8px 22px !important;
+    margin: 0 5px;
     transition: all 0.3s ease;
+    border-radius: 25px !important; /* Pill Shape */
 
     &:hover {
-      background: #111 !important; 
+      background: #333 !important; 
       color: #fff !important;      
-      transform: translateY(-1px);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     }
   }
 }
 
-/* 3. Refined Blog Post (Single Layout) */
+/* 3. Cinematic Blog Post (Single Layout) Upgrade */
 .layout--single {
   .page__inner-wrap {
-    background: rgba(255, 255, 255, 0.92) !important;
-    padding: 2.5rem !important; /* Reduced padding for better fit */
-    border-radius: 18px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-    max-width: 900px; /* Limits width so lines aren't too long to read */
-    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(12px);
+    padding: 3.5rem !important; /* Premium White Space */
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.5);
   }
 
   .page__title {
-    font-size: 1.8rem !important; /* Reduced from 2.6rem for sophistication */
-    font-weight: 800;
+    font-size: 2.6rem !important;
+    font-weight: 900;
+    letter-spacing: -1px;
     margin-bottom: 0.5rem;
   }
 
   .page__content {
-    line-height: 1.7 !important; /* Tightened from 2.0 */
-    font-size: 0.95rem !important; /* Standard professional reading size */
+    line-height: 2 !important; /* Essential for 600-word readability */
+    font-size: 1.12rem;
     color: #2c3e50;
 
     h3 {
-      font-size: 1.3rem !important; /* Scaled down subpoints */
-      margin-top: 2rem;
-      border-left: 4px solid #111;
-      padding-left: 12px;
+      font-size: 1.75rem;
+      margin-top: 2.5rem;
+      padding-left: 15px;
+      border-left: 5px solid #111; /* Engineering Accent */
     }
   }
 }
 
-/* 4. Compact Blog Archive Cards */
+/* 4. Modern Archive/Blog Cards (Blog List View) */
 .archive__item {
   background: rgba(255, 255, 255, 0.9) !important;
-  padding: 20px !important;
-  border-radius: 12px !important;
-  border-left: 4px solid #333;
-  
-  .archive__item-title {
-    font-size: 1.2rem !important; /* Smaller card titles */
-    margin-bottom: 5px;
-  }
+  padding: 30px !important;
+  margin-bottom: 25px;
+  border-radius: 18px !important;
+  border-left: 6px solid #333; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.3s ease;
 
-  .archive__item-excerpt {
-    font-size: 0.85rem !important;
-    line-height: 1.5;
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+    border-left-color: #007bff; 
   }
 }
 
-/* 5. Sidebar Refinement */
+/* 5. Cinematic Sidebar & Content Cards */
 .sidebar {
-  font-size: 0.85rem; /* Smaller sidebar text */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
   .author__avatar img {
-    border-radius: 12px !important;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 18% !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+    transition: transform 0.3s ease;
+    &:hover { transform: scale(1.05); }
   }
+}
+
+.page {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
 }
