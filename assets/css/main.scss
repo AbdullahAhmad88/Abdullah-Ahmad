@@ -7,53 +7,64 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'contrast' }}"; 
 @import "minimal-mistakes"; 
 
-/* --- Abdullah's Professional Engineering Aesthetic --- */
+/* --- Abdullah's High-Tech Aesthetic Overrides --- */
 
-#main {
-  // Cinematic Profile Image
-  .author__avatar img {
-    border-radius: 12px !important;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
-    border: 1px solid #eee;
-    transition: all 0.3s ease;
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
-    }
-  }
-
-  // Modern Content Spacing
-  .page__content {
-    h2 {
-      border-bottom: 3px solid #333; // Strong accent line
-      display: inline-block;
-      padding-bottom: 5px;
-      margin-top: 1.5em;
-    }
-
-    // Custom Bullet Points for Competencies
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      li {
-        margin-bottom: 12px;
-        padding: 10px 15px;
-        background: #f9f9f9;
-        border-radius: 6px;
-        border-left: 4px solid #333;
-        transition: transform 0.2s;
-        &:hover { transform: translateX(5px); }
-      }
-    }
-  }
+/* 1. Modern Background */
+body {
+  /* A very light grey-blue gradient for a "tech" feel instead of plain white */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-attachment: fixed;
+  color: #333;
 }
 
-// Glassmorphism Header
+/* 2. Glassmorphism Navigation Bar */
 .masthead {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.9) !important;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+  background: rgba(255, 255, 255, 0.7) !important; 
+  backdrop-filter: blur(15px); /* This creates the "iPhone-style" frosted glass */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+
+  /* Modernizing the Menu Buttons */
+  .masthead__menu-item a {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.85rem;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+      color: #007bff !important; /* Tech blue accent */
+      transform: translateY(-2px);
+    }
+  }
+}
+
+/* 3. The "Cinematic" Profile Card */
+.sidebar {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  .author__avatar img {
+    border-radius: 15% !important; /* Soft rounded square */
+    filter: contrast(1.1) brightness(0.9); /* Subtle cinematic filter */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
+/* 4. Content Area Modernization */
+.page {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
 }
