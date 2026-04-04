@@ -1,10 +1,11 @@
 ---
 layout: single
 title: "My Journey at UET: Engineering a Future in Tech"
-date: 2026-04-04
-categories: [Experience, Education]
-tags: [UET, Computer Engineering, AI]
-author_profile: true
+header:
+  overlay_image: /assets/images/uet-banner.jpg # Put a cool UET or Tech photo here
+  overlay_filter: 0.5 # Makes the image darker so text is readable
+  caption: "UET Faisalabad Campus"
+excerpt: "Every great journey begins with a single step..."
 ---
 
 Every great journey begins with a single step, and mine started on September 16, 2025, when I officially joined the University of Engineering and Technology (UET), Faisalabad Campus. Transitioning into the world of Computer Engineering has been a transformative experience, blending rigorous academic challenges with the excitement of modern technology.
