@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "Cinematic Frames: My Journey into the World of Anime"
+date: 2026-04-04
+categories: [Interests]
 header:
   overlay_image: /assets/images/anime-header.jpg
   overlay_filter: 0.4
