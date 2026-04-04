@@ -4,162 +4,116 @@
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; 
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'contrast' }}"; 
 @import "minimal-mistakes"; 
 
-/* --- Abdullah's Bright & Minimalist "Tech-Snow" Portfolio --- */
+/* --- Abdullah's High-Tech & Cinematic Portfolio --- */
 
-/* 1. Ultra-Clean Background & Layout Width Fixes */
+/* 1. Modern Background Gradient */
 body {
-  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%) !important;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
   background-attachment: fixed !important;
-  color: #2d3436;
-  font-family: 'Inter', -apple-system, sans-serif;
+  color: #333;
 }
 
-#main {
-  max-width: 95% !important; /* Expansion: Removes the large right-side gap */
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 2rem;
-}
-
-/* 2. Pure Glass Navigation */
+/* 2. Glassmorphism Navigation & Pill Buttons */
 .masthead {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.8) !important; 
-  backdrop-filter: blur(20px) saturate(200%);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-
-  .site-title {
-    font-weight: 800;
-    color: #0984e3 !important; 
-    letter-spacing: -0.5px;
-  }
+  background: rgba(255, 255, 255, 0.7) !important; 
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 
   .masthead__menu-item a {
-    font-weight: 600 !important;
-    font-size: 0.9rem;
-    padding: 10px 22px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 0.85rem;
+    padding: 8px 22px !important;
     margin: 0 5px;
-    color: #636e72 !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 50px !important; 
+    transition: all 0.3s ease;
+    border-radius: 25px !important; /* Pill Shape */
 
     &:hover {
-      background: #0984e3 !important; 
-      color: #ffffff !important;      
+      background: #333 !important; 
+      color: #fff !important;      
       transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(9, 132, 227, 0.2);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     }
   }
 }
 
-/* 3. The "Paper" Content Layout - Adjusted for Width */
+/* 3. Cinematic Blog Post (Single Layout) Upgrade */
 .layout--single {
   .page__inner-wrap {
-    background: #ffffff !important;
-    padding: 4.5rem !important; 
-    border-radius: 32px;
-    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.04);
-    border: 1px solid rgba(0, 0, 0, 0.02);
-    width: 100% !important; /* Fill container */
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(12px);
+    padding: 3.5rem !important; /* Premium White Space */
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.5);
   }
 
   .page__title {
-    font-size: 3.2rem !important;
-    font-weight: 800;
-    color: #2d3436;
-    letter-spacing: -1.5px;
-    line-height: 1.1;
+    font-size: 2.6rem !important;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 0.5rem;
   }
 
   .page__content {
-    line-height: 1.9 !important; 
-    font-size: 1.15rem;
-    color: #4b5563;
+    line-height: 2 !important; /* Essential for 600-word readability */
+    font-size: 1.12rem;
+    color: #2c3e50;
 
     h3 {
-      font-size: 1.8rem;
-      color: #0984e3;
-      margin-top: 3.5rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-    }
-
-    img {
-      border-radius: 20px;
-      box-shadow: 0 30px 60px rgba(0,0,0,0.08);
-      transition: transform 0.5s ease;
-      &:hover { transform: scale(1.01); }
+      font-size: 1.75rem;
+      margin-top: 2.5rem;
+      padding-left: 15px;
+      border-left: 5px solid #111; /* Engineering Accent */
     }
   }
 }
 
-/* 4. Responsive Layout Proportion (Fixes the right-side space) */
-@media (min-width: 64em) {
-  .sidebar {
-    width: 25% !important;
-    padding-right: 20px;
-  }
-  .page {
-    width: 75% !important; /* Adjusted to fill the right side completely */
-    padding-right: 0 !important;
-    margin-right: 0 !important;
-  }
-}
-
-/* 5. Soft Sidebar Design */
-.sidebar {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 30px;
-  border-radius: 28px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03);
-
-  .author__avatar img {
-    border-radius: 24% !important;
-    border: 4px solid #ffffff;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
-  }
-
-  .author__name {
-    font-weight: 800;
-    color: #2d3436 !important;
-    font-size: 1.5rem;
-  }
-}
-
-/* 6. Minimalist Archive Cards */
+/* 4. Modern Archive/Blog Cards (Blog List View) */
 .archive__item {
-  background: #ffffff !important;
-  padding: 40px !important;
-  margin-bottom: 30px;
-  border-radius: 28px !important;
-  border: 1px solid rgba(0, 0, 0, 0.03);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02) !important;
-  transition: all 0.4s ease;
+  background: rgba(255, 255, 255, 0.9) !important;
+  padding: 30px !important;
+  margin-bottom: 25px;
+  border-radius: 18px !important;
+  border-left: 6px solid #333; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.3s ease;
 
   &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.06) !important;
-    border-color: #0984e3;
-  }
-
-  .archive__item-title {
-    color: #2d3436 !important;
-    font-weight: 800;
-    font-size: 1.6rem;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+    border-left-color: #007bff; 
   }
 }
 
-/* 7. Contact Icons Stylization */
-.author__urls-wrapper svg {
-  color: #0984e3 !important;
-  width: 18px;
-  margin-right: 12px;
+/* 5. Cinematic Sidebar & Content Cards */
+.sidebar {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  .author__avatar img {
+    border-radius: 18% !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+    transition: transform 0.3s ease;
+    &:hover { transform: scale(1.05); }
+  }
+}
+
+.page {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
 }
