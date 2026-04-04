@@ -1,55 +1,83 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Front matter is required
 ---
 
 @charset "utf-8";
 
-// Import the skin and main partials
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'contrast' }}";
-@import "minimal-mistakes";
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'contrast' }}"; 
+@import "minimal-mistakes"; 
 
-/* --- Abdullah's Professional Aesthetic Overrides --- */
+/* --- Abdullah's High-End Portfolio Styling --- */
 
-#main {
-  /* Cinematic Profile Picture */
-  .author__avatar img {
-    border-radius: 12px !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
-    transition: transform 0.3s ease-in-out;
-    &:hover {
-      transform: translateY(-5px);
-    }
-  }
-
-  /* Clean Typography for Home & About */
-  .page__content {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    
-    h2, h3 {
-      border-bottom: 2px solid #333;
-      display: inline-block;
-      padding-bottom: 4px;
-      margin-top: 1.5em;
-    }
-  }
+/* 1. Global Spacing & Typography */
+body {
+  background-color: #fcfcfc; /* Slightly off-white for a cleaner look */
+  letter-spacing: 0.2px;
 }
 
-/* Glassmorphism Sticky Header */
+/* 2. Glassmorphism Sticky Header */
 .masthead {
-  position: -webkit-sticky; /* for Safari */
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.9) !important;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #eeeeee !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(12px); /* Modern frosted glass effect */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+  
+  .masthead__menu-item a {
+    font-weight: 600;
+    font-size: 0.95rem;
+    &:hover { color: #007bff !important; }
+  }
 }
 
-/* Smooth Links */
-.masthead__menu-item a {
-  transition: color 0.3s ease;
+/* 3. Refined Profile Section */
+.author__avatar img {
+  border-radius: 16px !important; /* Modern rounded square */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
   &:hover {
-    color: #007bff !important;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15) !important;
+  }
+}
+
+/* 4. Professional Content Layout */
+.page__content {
+  h1.page__title {
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 1.8em;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  /* Core Competencies List Upgrade */
+  ul {
+    list-style: none;
+    padding-left: 0;
+    
+    li {
+      background: #ffffff;
+      margin-bottom: 12px;
+      padding: 15px 20px;
+      border-radius: 8px;
+      border-left: 4px solid #333; /* Minimalist accent line */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      transition: transform 0.2s;
+      
+      &:hover {
+        transform: translateX(5px);
+        background: #fafafa;
+      }
+    }
   }
 }
