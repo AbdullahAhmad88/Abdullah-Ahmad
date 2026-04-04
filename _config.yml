@@ -1,85 +1,80 @@
----
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site.
-
 # Theme Settings
-minimal_mistakes_skin    : "contrast"
+minimal_mistakes_skin: "contrast"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Abdullah Ahmad Mirza | Portfolio"
-title_separator          : "-"
-name                     : "Abdullah Ahmad"
-description              : "Computer Engineering Student at UET | Exploring AI, Software Dev, and Digital Design."
-url                      : "https://abdullahahmad88.github.io" # Fixed: Points to your live site
-baseurl                  : "/Abdullah-Ahmad" # Added: This matches your repository subpath
-repository               : "AbdullahAhmad88/Abdullah-Ahmad"
-words_per_minute         : 200
+locale: "en-US"
+title: "Abdullah Ahmad Mirza | Portfolio"
+title_separator: "-"
+name: "Abdullah Ahmad"
+description: "Computer Engineering Student at UET | Exploring AI, Software Dev, and Digital Design."
 
-# Site Author
+# 🔴 IMPORTANT FIX (GitHub Pages URL)
+url: "https://abdullahahmad88.github.io"
+baseurl: ""
+
+repository: "AbdullahAhmad88/AbdullahAhmad88.github.io"
+
+# Author Info
 author:
-  name             : "Abdullah Ahmad Mirza"
-  avatar           : "/assets/images/profiles.jpeg"
-  bio              : "Computer Engineering Student @ UET. Focused on AI and Software Development."
-  location         : "Faisalabad, Pakistan"
-  email            : "abdullahahmadmirza42@gmail.com"
+  name: "Abdullah Ahmad Mirza"
+  avatar: "/assets/images/profiles.jpeg"
+  bio: "Computer Engineering Student @ UET. Focused on AI and Software Development."
+  location: "Faisalabad, Pakistan"
+  email: "abdullahahmadmirza42@gmail.com"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/AbdullahAhmad88"
+
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:abdullahahmadmirza42@gmail.com"
 
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
+
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/AbdullahAhmad88"
+
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
+
 # Reading Files
 include:
-  - .htaccess
   - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - node_modules
-  - package.json
-  - package-lock.json
-  - vendor/bundle/
-  - vendor/cache/
 
-# Conversion
+exclude:
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+
+# Markdown
 markdown: kramdown
 highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
 
-# Outputting
+# Permalink
 permalink: /:categories/:title/
-timezone: "Asia/Karachi"
 
 # Pagination
 paginate: 5
 paginate_path: /page:num/
 
-# Plugins
+# Plugins (GitHub supported)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
-# Archives (Fixes the 404 Error)
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
 
 # Defaults
 defaults:
@@ -90,6 +85,5 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
       share: true
       related: true
