@@ -4,174 +4,141 @@
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'contrast' }}"; 
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; 
 @import "minimal-mistakes"; 
 
-/* --- Abdullah's "Visual Engineering" Dark Cinematic Theme --- */
+/* --- Abdullah's Bright & Minimalist "Tech-Snow" Portfolio --- */
 
-/* 1. Deep Space Background */
+/* 1. Ultra-Clean Background */
 body {
-  background: radial-gradient(circle at top right, #1a1c2c, #0a0b10) !important;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%) !important;
   background-attachment: fixed !important;
-  color: #e0e0e0;
-  font-family: 'Inter', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu, cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #2d3436;
+  font-family: 'Inter', -apple-system, sans-serif;
 }
 
-/* 2. Frosted Glass Navigation */
+/* 2. Pure Glass Navigation */
 .masthead {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 11, 16, 0.8) !important; 
-  backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-
-  .masthead__inner-wrap {
-    padding: 0.8rem 1rem;
-  }
+  background: rgba(255, 255, 255, 0.8) !important; 
+  backdrop-filter: blur(20px) saturate(200%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 
   .site-title {
-    font-weight: 900;
+    font-weight: 800;
+    color: #0984e3 !important; /* Professional Electric Blue */
     letter-spacing: -0.5px;
-    color: #66FCF1 !important; /* Neon Cyan Accent */
   }
 
   .masthead__menu-item a {
     font-weight: 600 !important;
-    text-transform: capitalize;
-    letter-spacing: 0.5px;
     font-size: 0.9rem;
-    padding: 10px 20px !important;
-    margin: 0 8px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border-radius: 12px !important; 
-    color: #fff !important;
+    padding: 10px 22px !important;
+    margin: 0 5px;
+    color: #636e72 !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50px !important; /* Perfect Pill Shape */
 
     &:hover {
-      background: rgba(102, 252, 241, 0.1) !important; 
-      color: #66FCF1 !important;      
-      transform: translateY(-3px);
-      box-shadow: 0 0 20px rgba(102, 252, 241, 0.2);
+      background: #0984e3 !important; 
+      color: #ffffff !important;      
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(9, 132, 227, 0.2);
     }
   }
 }
 
-/* 3. Cinematic Content Container */
+/* 3. The "Paper" Content Layout */
 .layout--single {
   .page__inner-wrap {
-    background: rgba(20, 22, 28, 0.6) !important;
-    backdrop-filter: blur(15px);
-    padding: 4rem !important; 
-    border-radius: 30px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: #ffffff !important;
+    padding: 4.5rem !important; 
+    border-radius: 32px;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.02);
   }
 
   .page__title {
-    font-size: 3rem !important;
+    font-size: 3.2rem !important;
     font-weight: 800;
-    background: linear-gradient(to right, #ffffff, #66FCF1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 1.5rem;
+    color: #2d3436;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
   }
 
   .page__content {
-    line-height: 1.8 !important; 
+    line-height: 1.9 !important; 
     font-size: 1.15rem;
-    color: #c5c6c7;
+    color: #4b5563;
 
     h3 {
       font-size: 1.8rem;
-      color: #66FCF1;
-      margin-top: 3rem;
-      border-left: 4px solid #66FCF1;
-      padding-left: 20px;
-      text-shadow: 0 0 15px rgba(102, 252, 241, 0.3);
+      color: #0984e3;
+      margin-top: 3.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
     }
 
-    strong { color: #fff; }
-    
     img {
-      border-radius: 15px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-      border: 1px solid rgba(255,255,255,0.1);
-      transition: transform 0.4s ease;
-      &:hover { transform: scale(1.02); }
+      border-radius: 20px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+      transition: transform 0.5s ease;
+      &:hover { transform: scale(1.01); }
     }
   }
 }
 
-/* 4. High-Tech Sidebar */
+/* 4. Soft Sidebar Design */
 .sidebar {
-  background: rgba(25, 28, 35, 0.7);
-  padding: 25px;
-  border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 28px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03);
 
   .author__avatar img {
-    border-radius: 22% !important;
-    border: 2px solid #66FCF1;
-    padding: 3px;
-    background: #0b0c10;
-    box-shadow: 0 10px 30px rgba(102, 252, 241, 0.2) !important;
-    filter: contrast(1.1) brightness(0.9);
+    border-radius: 24% !important;
+    border: 4px solid #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
   }
 
   .author__name {
-    color: #fff !important;
-    font-size: 1.4rem;
-    margin-top: 15px;
-  }
-
-  .author__bio {
-    color: #8f9aa7 !important;
-    font-size: 0.95rem;
+    font-weight: 800;
+    color: #2d3436 !important;
+    font-size: 1.5rem;
   }
 }
 
-/* 5. Contact Info Aesthetic Icons */
-.author__urls-wrapper {
-  .author__urls {
-    li {
-      color: #c5c6c7 !important;
-      font-size: 0.9rem;
-      margin-bottom: 10px;
-      
-      a {
-        color: inherit;
-        &:hover { color: #66FCF1 !important; }
-      }
-
-      svg {
-        color: #66FCF1;
-        margin-right: 10px;
-      }
-    }
-  }
-}
-
-/* 6. Professional Blog Feed Cards */
+/* 5. Minimalist Archive Cards */
 .archive__item {
-  background: rgba(25, 28, 35, 0.5) !important;
-  padding: 35px !important;
+  background: #ffffff !important;
+  padding: 40px !important;
   margin-bottom: 30px;
-  border-radius: 25px !important;
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 28px !important;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.4s ease;
 
   &:hover {
-    transform: perspective(1000px) rotateX(2deg) translateY(-10px);
-    background: rgba(31, 40, 51, 0.8) !important;
-    border-color: rgba(102, 252, 241, 0.4);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5) !important;
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.06) !important;
+    border-color: #0984e3;
   }
 
   .archive__item-title {
-    color: #fff !important;
-    font-weight: 700;
+    color: #2d3436 !important;
+    font-weight: 800;
+    font-size: 1.6rem;
   }
+}
+
+/* 6. Contact Icons Stylization */
+.author__urls-wrapper svg {
+  color: #0984e3 !important;
+  width: 18px;
+  margin-right: 12px;
 }
