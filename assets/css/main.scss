@@ -11,13 +11,14 @@
 
 /* 1. Modern Background Gradient */
 body {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  background-attachment: fixed;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+  background-attachment: fixed !important;
   color: #333;
 }
 
 /* 2. Glassmorphism Navigation & Pill Buttons */
 .masthead {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -27,51 +28,74 @@ body {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 
   .masthead__menu-item a {
-    font-weight: 700;
+    font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     font-size: 0.85rem;
-    padding: 8px 20px !important;
+    padding: 8px 22px !important;
     margin: 0 5px;
     transition: all 0.3s ease;
-    border-radius: 25px; /* Creates the Pill Shape */
+    border-radius: 25px !important; /* Pill Shape */
 
     &:hover {
-      background: #333 !important; /* Dark background on hover */
-      color: #fff !important;      /* White text on hover */
+      background: #333 !important; 
+      color: #fff !important;      
       transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     }
   }
 }
 
-/* 3. Modern Archive/Blog Cards */
+/* 3. Cinematic Blog Post (Single Layout) Upgrade */
+.layout--single {
+  .page__inner-wrap {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(12px);
+    padding: 3.5rem !important; /* Premium White Space */
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .page__title {
+    font-size: 2.6rem !important;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 0.5rem;
+  }
+
+  .page__content {
+    line-height: 2 !important; /* Essential for 600-word readability */
+    font-size: 1.12rem;
+    color: #2c3e50;
+
+    h3 {
+      font-size: 1.75rem;
+      margin-top: 2.5rem;
+      padding-left: 15px;
+      border-left: 5px solid #111; /* Engineering Accent */
+    }
+  }
+}
+
+/* 4. Modern Archive/Blog Cards (Blog List View) */
 .archive__item {
   background: rgba(255, 255, 255, 0.9) !important;
-  padding: 25px;
+  padding: 30px !important;
   margin-bottom: 25px;
-  border-radius: 15px;
-  border-left: 6px solid #333; /* Strong Engineering accent */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 18px !important;
+  border-left: 6px solid #333; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04) !important;
   transition: all 0.3s ease;
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-    border-left-color: #007bff; /* Tech-blue change on hover */
-  }
-
-  .archive__item-title {
-    font-weight: 800;
-    a {
-      color: #111;
-      text-decoration: none;
-      &:hover { color: #007bff; }
-    }
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+    border-left-color: #007bff; 
   }
 }
 
-/* 4. Cinematic Sidebar & Avatar */
+/* 5. Cinematic Sidebar & Content Cards */
 .sidebar {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
@@ -80,14 +104,12 @@ body {
 
   .author__avatar img {
     border-radius: 18% !important;
-    filter: contrast(1.05) brightness(0.95);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
     transition: transform 0.3s ease;
-    &:hover { transform: rotate(2deg) scale(1.03); }
+    &:hover { transform: scale(1.05); }
   }
 }
 
-/* 5. Main Page Content Card */
 .page {
   background: rgba(255, 255, 255, 0.95);
   padding: 40px;
