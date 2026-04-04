@@ -9,12 +9,19 @@
 
 /* --- Abdullah's Bright & Minimalist "Tech-Snow" Portfolio --- */
 
-/* 1. Ultra-Clean Background */
+/* 1. Ultra-Clean Background & Layout Width Fixes */
 body {
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%) !important;
   background-attachment: fixed !important;
   color: #2d3436;
   font-family: 'Inter', -apple-system, sans-serif;
+}
+
+#main {
+  max-width: 95% !important; /* Expansion: Removes the large right-side gap */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
 }
 
 /* 2. Pure Glass Navigation */
@@ -29,7 +36,7 @@ body {
 
   .site-title {
     font-weight: 800;
-    color: #0984e3 !important; /* Professional Electric Blue */
+    color: #0984e3 !important; 
     letter-spacing: -0.5px;
   }
 
@@ -40,7 +47,7 @@ body {
     margin: 0 5px;
     color: #636e72 !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 50px !important; /* Perfect Pill Shape */
+    border-radius: 50px !important; 
 
     &:hover {
       background: #0984e3 !important; 
@@ -51,7 +58,7 @@ body {
   }
 }
 
-/* 3. The "Paper" Content Layout */
+/* 3. The "Paper" Content Layout - Adjusted for Width */
 .layout--single {
   .page__inner-wrap {
     background: #ffffff !important;
@@ -59,6 +66,7 @@ body {
     border-radius: 32px;
     box-shadow: 0 40px 100px rgba(0, 0, 0, 0.04);
     border: 1px solid rgba(0, 0, 0, 0.02);
+    width: 100% !important; /* Fill container */
   }
 
   .page__title {
@@ -91,7 +99,20 @@ body {
   }
 }
 
-/* 4. Soft Sidebar Design */
+/* 4. Responsive Layout Proportion (Fixes the right-side space) */
+@media (min-width: 64em) {
+  .sidebar {
+    width: 25% !important;
+    padding-right: 20px;
+  }
+  .page {
+    width: 75% !important; /* Adjusted to fill the right side completely */
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* 5. Soft Sidebar Design */
 .sidebar {
   background: rgba(255, 255, 255, 0.7);
   padding: 30px;
@@ -113,7 +134,7 @@ body {
   }
 }
 
-/* 5. Minimalist Archive Cards */
+/* 6. Minimalist Archive Cards */
 .archive__item {
   background: #ffffff !important;
   padding: 40px !important;
@@ -136,7 +157,7 @@ body {
   }
 }
 
-/* 6. Contact Icons Stylization */
+/* 7. Contact Icons Stylization */
 .author__urls-wrapper svg {
   color: #0984e3 !important;
   width: 18px;
