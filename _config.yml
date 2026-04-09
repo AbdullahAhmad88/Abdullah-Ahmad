@@ -1,5 +1,6 @@
 # Theme Settings
 minimal_mistakes_skin: "dark"
+remote_theme: mmistakes/minimal-mistakes@4.28.0
 
 # Site Settings
 locale: "en-US"
@@ -8,11 +9,10 @@ title_separator: "-"
 name: "Abdullah Ahmad"
 description: "Computer Engineering Student at UET | Exploring AI, Software Dev, and Digital Design."
 
-# 🔴 IMPORTANT FIX (GitHub Pages URL)
+# GitHub Pages URL
 url: "https://abdullahahmad88.github.io"
 baseurl: ""
-
-repository: "AbdullahAhmad88/AbdullahAhmad88.github.io"
+repository: "AbdullahAhmad88/Abdullah-Ahmad"
 
 # Author Info
 author:
@@ -25,11 +25,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/AbdullahAhmad88"
-
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:abdullahahmadmirza42@gmail.com"
-
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
@@ -40,7 +38,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/AbdullahAhmad88"
-
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
@@ -73,8 +70,9 @@ permalink: /:categories/:title/
 paginate: 5
 paginate_path: /page:num/
 
-# Plugins (GitHub supported)
+# Plugins
 plugins:
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
@@ -91,10 +89,12 @@ defaults:
       read_time: true
       share: true
       related: true
-      # Archives
+
+# Archives
 category_archive:
   type: liquid
   path: /categories/
+
 tag_archive:
   type: liquid
   path: /tags/
