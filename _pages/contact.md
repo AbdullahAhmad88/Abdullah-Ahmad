@@ -1,9 +1,15 @@
 ---
 layout: single
-title: "Contact Us"
-permalink: /contact/
 author_profile: true
+title: "Contact"
+permalink: /contact/
 ---
+
+## Get In Touch
+
+- **Email:** abdullahahmadmirza42@gmail.com
+- **WhatsApp:** +92 317 7050108
+- **Location:** Faisalabad, Pakistan
 
 If you have any questions, project inquiries, or would like to collaborate on **AI or Software Development** tasks, please feel free to reach out using the details below.
 
