@@ -2,8 +2,8 @@ main:
   - title: "Home"
     url: /
   - title: "About"
-    url: /#about
+    url: /about/
   - title: "Personal Experiences"
-    url: /#experiences
+    url: /blog/
   - title: "Contact"
-    url: /#contact
+    url: /contact/
