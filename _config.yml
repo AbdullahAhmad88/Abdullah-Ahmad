@@ -4,7 +4,7 @@ remote_theme: mmistakes/minimal-mistakes@4.28.0
 
 # Site Settings
 locale: "en-US"
-title: "Abdullah Ahmad Mirza | Portfolio"
+title:   "Abdullah Ahmad Mirza | Portfolio"
 title_separator: "-"
 name: "Abdullah Ahmad"
 description: "Computer Engineering Student at UET | Exploring AI, Software Dev, and Digital Design."
