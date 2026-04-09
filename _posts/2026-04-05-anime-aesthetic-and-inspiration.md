@@ -18,7 +18,7 @@ For many, animation is simply a medium of entertainment. However, for a student 
 ### 1. The Visual Language of Light and Shadow
 One of the primary reasons I am drawn to modern anime is its unparalleled use of **cinematic lighting**. Series produced by studios like *CoMix Wave Films* or *MAPPA* demonstrate a mastery of atmosphere that I strive to replicate in my own image editing. The way a single frame can capture the "golden hour" or the "dark black shadowed" streets of a neon-lit Tokyo is fascinating.
 
-![Anime Landscape]({{ site.baseurl }}/assets/images/animie-landscape.jpg)
+![Animie Landscape]({{ site.baseurl }}/assets/images/animie-landscape.jpg)
 *Figure 1: Minimalist landscapes often provide the best inspiration for digital gradients.*
 
 As I experiment with **"Japanese" visual filters** and facial refinements in my personal photo editing projects, I often look to these frames for guidance. The minimalist approach—where every line and shadow has a purpose—parallels the "clean code" philosophy we study in engineering. It teaches me that complexity does not always mean quality; often, the most impactful designs are those that use space effectively.
