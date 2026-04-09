@@ -7,13 +7,27 @@
     color: #1a1830 !important;
   }
 
-  /* Nav */
+  /* * Nav - Upgraded to Floating Glass Bento 
+   */
   .masthead {
-    background: rgba(255, 255, 255, 0.85) !important;
-    border-bottom: 1px solid rgba(124, 109, 250, 0.15) !important;
-    backdrop-filter: blur(16px) !important;
-    box-shadow: 0 1px 24px rgba(124, 109, 250, 0.08) !important;
+    background: rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(180%) !important; /* Safari support */
+    border: 1px solid rgba(124, 109, 250, 0.15) !important;
+    border-radius: 24px !important; /* Floating pill effect */
+    box-shadow: 0 10px 30px rgba(124, 109, 250, 0.1) !important;
+    width: 95% !important;
+    max-width: 1200px !important;
+    margin: 1.5rem auto !important; /* Detaches it from the top */
+    position: sticky !important;
+    top: 1.5rem !important;
+    z-index: 9999 !important;
   }
+  
+  .masthead__inner-wrap {
+    padding: 0.5rem 1rem !important; /* Slightly tighter padding for the pill look */
+  }
+
   .site-title {
     font-family: 'Syne', sans-serif !important;
     font-weight: 800 !important;
@@ -21,16 +35,26 @@
     letter-spacing: -0.02em !important;
     color: #1a1830 !important;
   }
+
+  /* Upgraded Nav Links with soft pill hover */
   .greedy-nav a {
     font-family: 'DM Sans', sans-serif !important;
     font-size: 0.85rem !important;
+    font-weight: 500 !important;
     color: #5a5780 !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 12px !important;
+    transition: all 0.3s ease !important;
   }
+  
   .greedy-nav a:hover {
     color: #7c6dfa !important;
+    background: rgba(124, 109, 250, 0.08) !important; /* Soft purple background on hover */
+    transform: translateY(-1px) !important; /* Slight lift effect */
   }
+  
   .greedy-nav .visible-links a:before {
-    background: #7c6dfa !important;
+    display: none !important; /* Hides the default theme line to favor the pill hover */
   }
 
   /* Sidebar */
