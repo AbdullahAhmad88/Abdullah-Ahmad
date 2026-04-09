@@ -50,13 +50,17 @@ include:
   - _pages
 
 exclude:
-  - node_modules
-  - vendor
-  - .bundle
-  - .sass-cache
-  - .jekyll-cache
+  - "*.gemspec"
+  - "*.gem"
   - Gemfile
   - Gemfile.lock
+  - Rakefile
+  - vendor
+  - CHANGELOG.md
+  - README.md
+  - LICENSE
+  - docs
+  - test
 
 # Markdown
 markdown: kramdown
