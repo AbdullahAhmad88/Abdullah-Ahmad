@@ -3,24 +3,31 @@
 <style>
   body {
     font-family: 'DM Sans', sans-serif !important;
-    background-color: #0a0a12 !important;
+    background-color: #f8f7ff !important;
+    color: #1a1830 !important;
   }
 
   /* Nav */
   .masthead {
-    background: rgba(8, 8, 18, 0.95) !important;
-    border-bottom: 1px solid rgba(124, 109, 250, 0.2) !important;
-    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.85) !important;
+    border-bottom: 1px solid rgba(124, 109, 250, 0.15) !important;
+    backdrop-filter: blur(16px) !important;
+    box-shadow: 0 1px 24px rgba(124, 109, 250, 0.08) !important;
   }
   .site-title {
     font-family: 'Syne', sans-serif !important;
     font-weight: 800 !important;
     font-size: 1.1rem !important;
     letter-spacing: -0.02em !important;
+    color: #1a1830 !important;
   }
   .greedy-nav a {
     font-family: 'DM Sans', sans-serif !important;
     font-size: 0.85rem !important;
+    color: #5a5780 !important;
+  }
+  .greedy-nav a:hover {
+    color: #7c6dfa !important;
   }
   .greedy-nav .visible-links a:before {
     background: #7c6dfa !important;
@@ -28,47 +35,65 @@
 
   /* Sidebar */
   .sidebar {
-    background: rgba(16, 16, 28, 0.6) !important;
-    border-right: 1px solid rgba(124, 109, 250, 0.1);
-    padding: 1.5rem 1rem !important;
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(124, 109, 250, 0.12) !important;
+    border-radius: 16px !important;
+    padding: 1.5rem !important;
+    box-shadow: 0 4px 32px rgba(124, 109, 250, 0.08) !important;
   }
   .author__name {
     font-family: 'Syne', sans-serif !important;
     font-weight: 800 !important;
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
+    color: #1a1830 !important;
     letter-spacing: -0.03em !important;
   }
   .author__bio {
     font-style: italic !important;
     font-size: 0.82rem !important;
-    opacity: 0.7;
+    color: #7a789a !important;
   }
   .author__avatar img {
     border-radius: 14px !important;
-    border: 2px solid rgba(124, 109, 250, 0.5) !important;
-    box-shadow: 0 0 24px rgba(124, 109, 250, 0.2) !important;
+    border: 2px solid rgba(124, 109, 250, 0.3) !important;
+    box-shadow: 0 4px 20px rgba(124, 109, 250, 0.15) !important;
   }
   .author__urls a {
     font-size: 0.82rem !important;
-    transition: color 0.2s !important;
+    color: #5a5780 !important;
+  }
+  .author__urls a:hover {
+    color: #7c6dfa !important;
   }
   .author__urls-wrapper .btn {
-    border: 1px solid rgba(124, 109, 250, 0.3) !important;
+    border: 1px solid rgba(124, 109, 250, 0.25) !important;
     border-radius: 8px !important;
+    color: #7c6dfa !important;
     font-size: 0.8rem !important;
+    background: rgba(124, 109, 250, 0.05) !important;
+  }
+
+  /* Page content */
+  .page__content {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 16px !important;
+    padding: 2rem !important;
+    border: 1px solid rgba(124, 109, 250, 0.08) !important;
+    box-shadow: 0 2px 24px rgba(124, 109, 250, 0.06) !important;
   }
 
   /* Typography */
   h1, h2, h3, h4 {
     font-family: 'Syne', sans-serif !important;
     letter-spacing: -0.02em !important;
+    color: #1a1830 !important;
   }
   .page__title {
     font-size: 2.2rem !important;
     font-weight: 800 !important;
     letter-spacing: -0.04em !important;
     line-height: 1.1 !important;
+    color: #1a1830 !important;
   }
   .page__title::after {
     content: '';
@@ -80,7 +105,7 @@
     margin-top: 10px;
   }
   h2 {
-    font-size: 0.75rem !important;
+    font-size: 0.72rem !important;
     text-transform: uppercase !important;
     letter-spacing: 0.14em !important;
     color: #7c6dfa !important;
@@ -90,16 +115,17 @@
   }
   h3 {
     font-size: 1rem !important;
-    color: #c4befa !important;
+    color: #3d3a6b !important;
   }
   p, li {
     font-family: 'DM Sans', sans-serif !important;
     font-size: 0.93rem !important;
-    line-height: 1.75 !important;
+    line-height: 1.8 !important;
+    color: #4a4870 !important;
   }
-  strong { color: #e8e4ff !important; }
-  a { color: #a594f9 !important; text-decoration: none !important; }
-  a:hover { color: #ffffff !important; }
+  strong { color: #1a1830 !important; }
+  a { color: #7c6dfa !important; text-decoration: none !important; }
+  a:hover { color: #4a3db5 !important; }
   hr {
     border: none !important;
     border-top: 1px solid rgba(124, 109, 250, 0.12) !important;
@@ -107,39 +133,32 @@
   }
   ul li::marker { color: #7c6dfa !important; }
 
-  /* Content area */
-  .page__content {
-    background: rgba(14, 14, 24, 0.5);
-    border-radius: 12px;
-    padding: 1.5rem !important;
-    border: 1px solid rgba(124, 109, 250, 0.08);
-  }
-
   /* Footer */
   .page__footer {
-    background: #060610 !important;
+    background: #f0eeff !important;
     border-top: 1px solid rgba(124, 109, 250, 0.12) !important;
     margin-top: 3rem !important;
+    color: #8a88aa !important;
   }
-  .page__footer a { color: #5a5880 !important; }
-  .page__footer a:hover { color: #a594f9 !important; }
+  .page__footer a { color: #9a98c0 !important; }
+  .page__footer a:hover { color: #7c6dfa !important; }
 
-  /* Glow blob */
+  /* Subtle background pattern */
   body::before {
     content: '';
     position: fixed;
-    top: -200px;
-    left: -200px;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(124,109,250,0.06) 0%, transparent 70%);
+    top: -150px;
+    right: -150px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(124,109,250,0.07) 0%, transparent 70%);
     pointer-events: none;
     z-index: -1;
   }
 
   /* Scrollbar */
   ::-webkit-scrollbar { width: 5px; }
-  ::-webkit-scrollbar-track { background: #08080f; }
-  ::-webkit-scrollbar-thumb { background: rgba(124,109,250,0.3); border-radius: 3px; }
-  ::-webkit-scrollbar-thumb:hover { background: rgba(124,109,250,0.6); }
+  ::-webkit-scrollbar-track { background: #f0eeff; }
+  ::-webkit-scrollbar-thumb { background: rgba(124,109,250,0.25); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(124,109,250,0.5); }
 </style>
