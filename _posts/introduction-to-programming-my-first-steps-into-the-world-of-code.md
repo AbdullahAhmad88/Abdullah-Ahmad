@@ -1,192 +1,110 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Programming: My First Steps into the World of Code</title>
+---
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            line-height: 1.8;
-            color: #333;
-        }
+layout: single
+title: "Introduction to Programming: My First Steps into the World of Code"
+date: 2026-06-25
+categories: [Programming Fundamentals]
+header:
+overlay_image: /assets/images/Programming%20Template.png
+overlay_filter: 0.4
+caption: "My first experience learning programming with Python."
+excerpt: "A reflection on my first encounter with programming, Python, and computational thinking under the guidance of Dr. Bilal."
+toc: true
+toc_label: "Contents"
+toc_icon: "code"
+----------------
 
-        .thumbnail,
-        .featured-image,
-        .content-image {
-            width: 100%;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
+Programming Fundamentals was my first formal introduction to software development as a Computer Engineering student at university. Under the guidance of **Dr. Bilal**, I began learning the Python programming language and discovered that programming is much more than writing code—it is a structured way of solving problems and communicating with computers.
 
-        h1, h2 {
-            color: #0d6efd;
-        }
+![Programming Fundamentals]({{ site.baseurl }}/assets/images/Programming%20Template.png)
+*Figure 1: Beginning my journey into programming and computational thinking.*
 
-        .meta {
-            background: #f8f9fa;
-            padding: 15px;
-            border-left: 5px solid #0d6efd;
-            margin-bottom: 20px;
-        }
+### 1. Understanding What Programming Really Is
 
-        ul {
-            padding-left: 20px;
-        }
+I still remember the excitement and curiosity I felt during my first Programming Fundamentals lecture. Before entering the course, I knew very little about how software was actually created. Terms such as variables, algorithms, functions, and compilers seemed complicated and unfamiliar.
 
-        .code-block {
-            background: #f4f4f4;
-            padding: 15px;
-            border-radius: 8px;
-            overflow-x: auto;
-        }
-    </style>
-</head>
-<body>
+Dr. Bilal started the course by introducing programming through real-world examples. He explained that programming is simply the process of giving clear and logical instructions to a computer. Whether following a recipe, operating a vending machine, or following traffic signals, every process follows a sequence of steps. This explanation helped me understand that programming is fundamentally about logic and problem-solving.
 
-    <!-- Thumbnail -->
-    <img src="assets/images/Programming%20Template.png"
-         alt="Programming Fundamentals Thumbnail"
-         class="thumbnail">
+The course immediately challenged me to think differently. Instead of focusing on what a computer does, I began thinking about *how* and *why* it performs certain actions. This shift in perspective became the foundation of my learning journey.
 
-    <h1>Introduction to Programming: My First Steps into the World of Code</h1>
+![Programming Fundamentals]({{ site.baseurl }}/assets/images/Programming%20Template.png)
+*Figure 2: Learning the relationship between logic and computer instructions.*
 
-    <div class="meta">
-        <p><strong>Date:</strong> 25-06-2026</p>
-        <p><strong>Teacher:</strong> Dr. Bilal</p>
-        <p><strong>Subject:</strong> Programming Fundamentals</p>
-        <p><strong>Language:</strong> Python</p>
-    </div>
+### 2. My First Python Program
 
-    <!-- Featured Image -->
-    <img src="assets/images/Programming%20Template.png"
-         alt="Featured Image"
-         class="featured-image">
+One of the most memorable moments of the semester was writing my very first Python program.
 
-    <h2>Course Description</h2>
-
-    <p>
-        Programming Fundamentals is a first-semester core course in the Computer Engineering
-        program designed to introduce students to the foundational concepts of software
-        development. Under the guidance of Dr. Bilal, this course uses Python as its primary
-        language — chosen for its clean syntax and beginner-friendly nature — to teach students
-        how to think computationally and translate real-world problems into logical,
-        executable instructions.
-    </p>
-
-    <h2>Learning Experience</h2>
-
-    <p>
-        I still remember the mix of excitement and nervousness I felt on the first day of
-        Programming Fundamentals. Walking into Dr. Bilal's class, I genuinely had no idea
-        what a compiler was, what a variable meant, or how a screen could display words just
-        because someone typed them.
-    </p>
-
-    <p>
-        Dr. Bilal opened the course by asking the class a simple question:
-        <em>"What does it mean to give instructions?"</em>
-        He walked us through everyday examples — a recipe, a traffic signal,
-        a vending machine. Slowly, it dawned on me that programming is fundamentally about
-        communication: telling a machine, step by step, exactly what to do, in a language it
-        can understand.
-    </p>
-
-    <!-- Learning Experience Image -->
-    <img src="assets/images/Programming%20Template.png"
-         alt="Programming Learning"
-         class="content-image">
-
-    <p>
-        We were introduced to Python on the very first day. Dr. Bilal had us install Python
-        and a code editor, and within the first twenty minutes of class, I had typed my first
-        program:
-    </p>
-
-    <div class="code-block">
-<pre>
+```python
 print("Hello, World!")
-</pre>
-    </div>
-
-    <!-- Code Snippet Image -->
-    <img src="assets/images/Programming%20Template.png"
-         alt="Code Snippet"
-         class="content-image">
-
-    <p>
-        Seeing Hello, World! appear on my screen was a surprisingly emotional moment.
-        It sounds trivial, but at that point I understood — for the first time — that I had
-        the ability to make a machine respond to my thoughts.
-    </p>
-
-    <p>
-        Dr. Bilal's teaching style made a significant difference in how quickly I grasped
-        these early concepts. Rather than jumping into definitions and syntax rules, he always
-        started with the "why."
-    </p>
-
-    <h2>Practical Examples</h2>
-
-    <p>
-        Throughout the introductory weeks, we worked on small but meaningful programs.
-        We wrote scripts that greeted users by name, calculated simple arithmetic,
-        and displayed formatted output.
-    </p>
-
-    <!-- Screenshot Image -->
-    <img src="assets/images/Programming%20Template.png"
-         alt="Programming Screenshot"
-         class="content-image">
-
-    <p>
-        One exercise that stood out was when he asked us to write a program that simulated
-        a simple ATM message — displaying a welcome screen, showing a balance,
-        and printing a goodbye note.
-    </p>
-
-    <h2>Challenges Faced</h2>
-
-    <p>
-        My biggest challenge in the beginning was understanding the concept of syntax —
-        that the computer would not forgive even a single missing colon or misplaced indent.
-        I made countless errors in those first few sessions.
-    </p>
-
-    <p>
-        But Dr. Bilal normalized this beautifully. "Errors are not failures," he told us.
-        "They are the computer telling you exactly where to look."
-    </p>
-
-    <h2>Key Takeaways</h2>
-
-    <ul>
-        <li>Programming is about logical, step-by-step thinking more than memorizing syntax.</li>
-        <li>Python's simplicity makes it ideal for beginners.</li>
-        <li>Every experienced programmer started as a beginner.</li>
-        <li>Reading error messages carefully is a valuable skill.</li>
-        <li>Consistency in practice matters more than natural talent.</li>
-    </ul>
-
-    <h2>Conclusion</h2>
-
-    <p>
-        My introduction to programming under Dr. Bilal was more than a technical orientation
-        — it was a mindset shift. I entered the classroom thinking programming was for a
-        specific kind of genius. I left understanding that it is a learnable, logical skill
-        that rewards patience and persistence.
-    </p>
-
-    <p>
-        This first post marks the beginning of a journey I am proud to document,
-        and I look forward to sharing every milestone along the way.
-    </p>
-
-</body>
-</html>
 ```
+
+Although the program was simple, seeing text appear on the screen because of code I had written felt incredibly rewarding. It was the first time I experienced the direct connection between human instructions and machine execution.
+
+Python proved to be an excellent language for beginners because of its clean syntax and readability. Unlike many programming languages that require extensive setup and complicated syntax, Python allowed me to focus on understanding concepts rather than memorizing rules.
+
+Dr. Bilal consistently emphasized understanding concepts before writing code. Rather than simply teaching syntax, he explained why each statement worked and how it related to broader programming principles.
+
+![Programming Fundamentals]({{ site.baseurl }}/assets/images/Programming%20Template.png)
+*Figure 3: Writing and executing my first Python programs.*
+
+### 3. Developing Problem-Solving Skills
+
+As the course progressed, I realized that programming is not about memorizing commands. It is about breaking large problems into smaller, manageable steps.
+
+We practiced designing solutions before writing code. This process taught me how to analyze requirements, identify inputs and outputs, and create logical sequences of operations.
+
+Some of the exercises included:
+
+* Greeting users through input and output statements.
+* Performing mathematical calculations.
+* Creating basic decision-making programs.
+* Designing menu-driven applications.
+* Building small real-world simulations.
+
+Each exercise strengthened my logical thinking and improved my confidence as a beginner programmer.
+
+### 4. Practical Applications of Programming
+
+One of the most interesting classroom activities involved developing a simple ATM simulation. The program displayed a welcome message, showed account information, and responded to user choices.
+
+Although basic, this project demonstrated how programming concepts could be applied to solve real-world problems. It also showed how software systems are built using small logical components working together.
+
+Through these exercises, I learned that every modern application—from mobile apps to banking systems—relies on the same fundamental principles we were studying in class.
+
+![Programming Fundamentals]({{ site.baseurl }}/assets/images/Programming%20Template.png)
+*Figure 4: Applying programming concepts to practical scenarios.*
+
+### 5. Challenges Faced During Learning
+
+Like many beginners, I struggled with syntax errors and indentation mistakes. Python's strict formatting requirements often caused programs to fail because of a missing colon or an incorrectly aligned block of code.
+
+At first, these errors felt frustrating. However, Dr. Bilal encouraged us to see error messages as helpful guides rather than obstacles. He frequently reminded us that debugging is an essential part of programming.
+
+Over time, I learned how to read error messages carefully and identify mistakes systematically. This experience improved my patience and taught me the importance of attention to detail.
+
+### 6. Key Lessons Learned
+
+By the end of the introductory phase of Programming Fundamentals, I had learned several valuable lessons:
+
+* Programming is primarily about logical thinking and problem-solving.
+* Python provides an accessible and powerful introduction to software development.
+* Making mistakes is a natural part of the learning process.
+* Debugging is one of the most important skills for programmers.
+* Consistent practice produces better results than relying on talent alone.
+* Complex software systems are built from simple concepts working together.
+
+These lessons continue to influence the way I approach both programming and engineering problems.
+
+### 7. Looking Ahead
+
+This course was only the beginning of my programming journey. As I continue studying Computer Engineering, the concepts introduced in Programming Fundamentals serve as the foundation for more advanced topics such as Data Structures, Algorithms, Software Engineering, Artificial Intelligence, and Machine Learning.
+
+Every new programming language and technology I learn can be traced back to the fundamental principles introduced during this course.
+
+### Conclusion
+
+My introduction to programming under **Dr. Bilal** was more than a technical learning experience—it was a mindset transformation. I entered the classroom with curiosity but little understanding of software development. By the end of the course, I had developed a strong foundation in computational thinking and problem-solving.
+
+Programming Fundamentals introduced me to a world where creativity and logic work together to solve problems. It marked the beginning of my journey as a Computer Engineering student and remains one of the most important milestones in my academic development.
+
+As I continue to learn and grow, I look back on this first experience with appreciation, recognizing it as the moment I took my first steps into the world of code.
