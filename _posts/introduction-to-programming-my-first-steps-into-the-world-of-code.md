@@ -2,7 +2,7 @@
 
 layout: single
 title: "Introduction to Programming: My First Steps into the World of Code"
-date: 2026-06-25
+date: 2025-06-25
 categories: [Programming Fundamentals]
 header:
 overlay_image: /assets/images/Programming%20Template.png
