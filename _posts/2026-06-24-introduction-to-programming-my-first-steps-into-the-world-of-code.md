@@ -1,19 +1,3 @@
----
-
-layout: single
-title: "Introduction to Programming: My First Steps into the World of Code"
-date: 2025-06-25
-categories: [Programming Fundamentals]
-header:
-overlay_image: /assets/images/Programming%20Template.png
-overlay_filter: 0.4
-caption: "My first experience learning programming with Python."
-excerpt: "A reflection on my first encounter with programming, Python, and computational thinking under the guidance of Dr. Bilal."
-toc: true
-toc_label: "Contents"
-toc_icon: "code"
-----------------
-
 Programming Fundamentals was my first formal introduction to software development as a Computer Engineering student at university. Under the guidance of **Dr. Bilal**, I began learning the Python programming language and discovered that programming is much more than writing code—it is a structured way of solving problems and communicating with computers.
 
 ![Programming Fundamentals]({{ site.baseurl }}/assets/images/Programming%20Template.png)
