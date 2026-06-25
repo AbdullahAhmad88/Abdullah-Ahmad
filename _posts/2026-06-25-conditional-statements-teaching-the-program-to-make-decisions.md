@@ -5,7 +5,7 @@ title: "Conditional Statements: Teaching the Program to Make Decisions"
 date: 2026-06-28
 categories: [Programming Fundamentals]
 header:
-overlay_image: /assets/images/conditional-statements-poster.png
+overlay_image: /assets/images/ChatGPT Image Jun 25, 2026, 11_41_24 AM.png
 overlay_filter: 0.4
 caption: "Learning how programs make decisions using conditional statements."
 excerpt: "Exploring Python's if, if-else, and if-elif-else structures under the guidance of Dr. Bilal."
@@ -16,7 +16,7 @@ toc_icon: "code-branch"
 
 Conditional statements represent one of the most important milestones in my Programming Fundamentals journey. Under the guidance of **Dr. Bilal**, I learned how programs can evaluate conditions, make decisions, and execute different actions based on different situations. This lesson transformed programming from a rigid sequence of commands into a dynamic system capable of logical decision-making.
 
-![Conditional Statements]({{ site.baseurl }}/assets/images/conditional-statements-poster.png)
+![Conditional Statements]({{ site.baseurl }}/assets/images/ChatGPT Image Jun 25, 2026, 11_41_24 AM.png)
 *Figure 1: Conditional statements allow programs to make intelligent decisions.*
 
 ### 1. Understanding Decision Making in Programming
@@ -31,7 +31,7 @@ This everyday decision follows the exact same logic as an `if-else` statement in
 
 The explanation immediately helped me understand that programming logic is often modeled after human decision-making.
 
-![Conditional Flowchart]({{ site.baseurl }}/assets/images/conditional-flowchart.png)
+![Conditional Flowchart]({{ site.baseurl }}/assets/images/ChatGPT Image Jun 25, 2026, 11_41_24 AM.png)
 *Figure 2: A flowchart demonstrating how conditions determine program execution paths.*
 
 ### 2. Learning the if Statement
@@ -137,9 +137,6 @@ else:
 
 print(f"Your grade is: {grade}")
 ```
-
-![Grade Classification Program]({{ site.baseurl }}/assets/images/conditional-grade-program.png)
-*Figure 3: A Python grade classification program using multiple conditional branches.*
 
 Testing different scores and observing the corresponding grades was extremely satisfying.
 
