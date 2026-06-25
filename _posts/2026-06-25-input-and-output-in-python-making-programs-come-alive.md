@@ -5,7 +5,7 @@ title: "Input and Output in Python: Making Programs Come Alive"
 date: 2026-06-27
 categories: [Programming Fundamentals]
 header:
-overlay_image: /assets/images/input-and-output.MP4
+overlay_image: /assets/images/input-and-output.mp4
 overlay_filter: 0.4
 caption: "Learning how programs communicate with users through input and output."
 excerpt: "Exploring Python's input() and print() functions while building interactive applications under the guidance of Dr. Bilal."
@@ -16,7 +16,7 @@ toc_icon: "keyboard"
 
 The topic of **Input and Output (I/O)** marked a major milestone in my Programming Fundamentals journey. Under the guidance of **Dr. Bilal**, I learned how programs can communicate with users, receive information, and produce meaningful responses. This lesson transformed programming from executing static instructions into creating interactive experiences.
 
-![Input and Output]({{ site.baseurl }}/assets/images/input-and-output.MP4)
+![Input and Output]({{ site.baseurl }}/assets/images/input-and-output.mp4)
 *Figure 1: Learning how programs interact with users through input and output operations.*
 
 ### 1. What Makes a Program Useful?
@@ -31,7 +31,7 @@ After listening to various responses, he guided us toward a fundamental truth: s
 
 This idea completely changed my perspective on programming. Instead of simply writing instructions for a machine, I began thinking about how users interact with software in the real world.
 
-![Input and Output]({{ site.baseurl }}/assets/images/input-and-output.MP4)
+![Input and Output]({{ site.baseurl }}/assets/images/input-and-output.mp4)
 *Figure 2: Interactive programs create communication between people and computers.*
 
 ### 2. Discovering the input() Function
